@@ -28,12 +28,11 @@ body {
 load_dotenv()
 
 client = OpenAI(
-    api_key="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",
+    api_key=os.getenv("OPENROUTER_API_KEY"),
     base_url="https://openrouter.ai/api/v1"
 )
 
 MODEL = "meta-llama/llama-3-8b-instruct"
-
 # ---- LLM WRAPPER ----
 def call_llm(prompt):
     response = client.chat.completions.create(
