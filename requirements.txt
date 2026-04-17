@@ -1,0 +1,13 @@
+streamlit
+openai
+python-dotenv
+
+numpy
+faiss-cpu
+
+sentence-transformers==2.2.2
+huggingface_hub==0.19.4
+transformers==4.35.2
+
+torch
+torchvision
